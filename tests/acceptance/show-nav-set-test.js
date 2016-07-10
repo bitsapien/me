@@ -14,8 +14,7 @@ moduleForAcceptance('Acceptance | list my contact points');
     visit('/');
 
     andThen(function() {
-      assert.equal(find('.contact-card').length, 1, 'should load one instance of contact-card');
-      assert.equal(find('.home-card').length, 1, 'should load one instance of home-card');
+      assert.equal(find('.nav-set').length, 1, 'should load one instance of navigation');
     });
   });
 
